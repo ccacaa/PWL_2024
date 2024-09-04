@@ -8,6 +8,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PhotoController;
 use Resouces\Views\hello;
+use Resouces\Views\blog;
 
 
 //Prak 1
@@ -77,8 +78,13 @@ use Resouces\Views\hello;
 //     'create', 'store', 'update', 'destroy'
 //    ]);
 
-   Route::get('/greeting', function () {
-    return view('hello', ['name' => 'Caca']);
+//(2)
+//    Route::get('/greeting', function () {
+//     return view('hello', ['name' => 'Caca']);
+//     });
+
+//(6)
+Route::get('/greeting', function () {
+    return view('blog.hello', ['name' => 'Caca']);
     });
-    
 ?>
