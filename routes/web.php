@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
+
+//Prak 1
 
 // Route::get('/hello', function () {
 //     return 'Hello World';
@@ -38,9 +41,12 @@ use Illuminate\Support\Facades\Route;
 //     return 'Nama Saya '.$name;
 // }); 
 
-
 //(17)
-Route::get('/user/{name?}', function ($name='Caca') {
-    return 'Nama saya '.$name;
-    });
+// Route::get('/user/{name?}', function ($name='Caca') {
+//     return 'Nama saya '.$name;
+//     });
+
+Route::get('/hello', [WelcomeController::class,'hello']);
+
+
 ?>
