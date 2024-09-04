@@ -78,13 +78,19 @@ use Resouces\Views\blog;
 //     'create', 'store', 'update', 'destroy'
 //    ]);
 
+//praktikum 3
+
 //(2)
 //    Route::get('/greeting', function () {
 //     return view('hello', ['name' => 'Caca']);
 //     });
 
 //(6)
-Route::get('/greeting', function () {
-    return view('blog.hello', ['name' => 'Caca']);
-    });
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Caca']);
+//     });
+
+//(9)
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
 ?>
