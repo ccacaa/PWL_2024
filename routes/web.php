@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\PageController;
 
 //Prak 1
 
@@ -46,7 +47,10 @@ use App\Http\Controllers\WelcomeController;
 //     return 'Nama saya '.$name;
 //     });
 
-Route::get('/hello', [WelcomeController::class,'hello']);
+// (prak 2)
+//(3)
+// Route::get('/hello', [WelcomeController::class,'hello']);
 
+Route::get('/', [PageController::class,'index']);
 
 ?>
