@@ -14,9 +14,14 @@ use Illuminate\Support\Facades\Route;
 //     return "Selamat Datang";
 // });
 
-Route::get('/about', function () {
-    return 
-    "Nama: Carieska Berliana Novita Kusuma Wardani<br>
-     NIM  : 2241760027";
-});
+// Route::get('/about', function () {
+//     return 
+//     "Nama: Carieska Berliana Novita Kusuma Wardani<br>
+//      NIM  : 2241760027";
+// });
+
+Route::get('/user/{Carieska}', function ($Carieska) {
+    return 'Nama saya '.$Carieska;
+    });
+    
 ?>
