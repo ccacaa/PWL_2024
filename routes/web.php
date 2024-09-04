@@ -29,8 +29,13 @@ use Illuminate\Support\Facades\Route;
 //  return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
 // }); (11)
 
-Route::get('/article/{id}', function ($id){
-    return 'Artikel dengan ID: '.$id;
-});
+// Route::get('/article/{id}', function ($id){
+//     return 'Artikel dengan ID: '.$id;
+// }); (13)
+
+//(14)
+Route::get('/user/{name?}', function ($name=null) {
+    return 'Nama Saya '.$name;
+}); 
 
 ?>
