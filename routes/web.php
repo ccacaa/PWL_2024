@@ -6,8 +6,11 @@ use Illuminate\Support\Facades\Route;
 //     return 'Hello World';
 // });
 
-Route::get('/world', function () {
-    return "World";
-});
+// Route::get('/world', function () {
+//     return "World";
+// });
 
+Route::get('/ucapan', function () {
+    return "Selamat Datang";
+});
 ?>
