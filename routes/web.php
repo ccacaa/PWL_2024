@@ -51,6 +51,7 @@ use App\Http\Controllers\PageController;
 //(3)
 // Route::get('/hello', [WelcomeController::class,'hello']);
 
-Route::get('/', [PageController::class,'index']);
+// Route::get('/', [PageController::class,'index']);
+Route::get('/about', [PageController::class,'about']);
 
 ?>
