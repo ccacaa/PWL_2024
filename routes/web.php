@@ -10,7 +10,13 @@ use Illuminate\Support\Facades\Route;
 //     return "World";
 // });
 
-Route::get('/ucapan', function () {
-    return "Selamat Datang";
+// Route::get('/ucapan', function () {
+//     return "Selamat Datang";
+// });
+
+Route::get('/about', function () {
+    return 
+    "Nama: Carieska Berliana Novita Kusuma Wardani<br>
+     NIM  : 2241760027";
 });
 ?>
