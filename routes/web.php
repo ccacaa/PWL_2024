@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LevelController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\UserController;
+use App\Models\UserModel;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\HomeController;
@@ -91,6 +96,14 @@ use Resouces\Views\blog;
 //     });
 
 //(9)
-Route::get('/greeting', [WelcomeController::class, 'greeting']);
+// Route::get('/greeting', [WelcomeController::class, 'greeting']);
 
+//Praktikum4 js 3
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/level', [LevelController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index']);
+Route::get('/user', [UserController::class, 'index']);
 ?>
